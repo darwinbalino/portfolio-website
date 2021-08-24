@@ -31,18 +31,13 @@ const Header = () => {
             01.{" "}
             <span className="cursor-pointer text-slate-lightest">About</span>
           </h1>
+
           <h1>
             02.{" "}
-            <span className="cursor-pointer text-slate-lightest">
-              Experience
-            </span>
-          </h1>
-          <h1>
-            03.{" "}
             <span className="cursor-pointer text-slate-lightest">Projects</span>
           </h1>
           <h1>
-            04.{" "}
+            03.{" "}
             <span className="cursor-pointer text-slate-lightest">Contact</span>
           </h1>
           <button className="px-4 py-2.5 rounded-sm cursor-pointer ring-1 ring-turquoise">

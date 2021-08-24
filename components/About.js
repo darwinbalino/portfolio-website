@@ -1,13 +1,15 @@
 import { ChevronDoubleRightIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 import React from "react";
+var portrait = require("/public/portrait.jpg");
 
 const About = () => {
   return (
     <main className="font-sans text-slate">
-      <header className="">
+      <header>
         <h1 className="font-mono text-turquoise">
           01.{"  "}
-          <span className="text-1.5xl font-bold text-slate-lightest">
+          <span className="font-sans text-1.5xl font-bold text-slate-lightest">
             About Me
           </span>
         </h1>
@@ -27,12 +29,13 @@ const About = () => {
             Veazey Scholarship
           </span>{" "}
           in 2014. Fast-forward to today, and I've rekindled my interest in web
-          development and{" "}
+          development &{" "}
           <span className="text-turquoise">passion for technology </span>
           while learning to program in JavaScript.
         </h1>
         <h1>Here are a few technologies I've been working with recently:</h1>
       </section>
+
       <div className="max-w-sm">
         <div className="grid grid-cols-2 mt-5 space-y-2 font-mono text-tiny ">
           <div className="flex items-center space-x-3">
@@ -60,6 +63,16 @@ const About = () => {
             <h1>Firebase</h1>
           </div>
         </div>
+      </div>
+
+      <div className="flex items-center mt-14">
+        <Image
+          className="rounded-3xl tint ring-8 ring-turquoise"
+          src={portrait}
+          width={245}
+          height={250}
+          objectFit="contain"
+        />
       </div>
     </main>
   );

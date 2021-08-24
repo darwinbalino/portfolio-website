@@ -16,7 +16,7 @@ const Hero = () => {
         <h1 className="mt-6 font-sans text-md ">
           I'm an aspiring software developer. I've been learning to program in
           Javascript for the past 12 months. Currently, I'm focused on building
-          projects using React using{" "}
+          projects with React using{" "}
           <span className="text-turquoise">Next.js & Node.js</span> with
           Express.
         </h1>
