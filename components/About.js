@@ -23,7 +23,7 @@ const About = () => {
           together a custom reblog button taught me a lot about HTML & CSS!
         </h1>
         <h1>
-          Since, then I've had the privilage of studying General Science at The
+          Since then, I've had the privilage of studying General Science at The
           University of British Columbia as a recipient of a{" "}
           <span className="cursor-pointer text-turquoise hover:underline">
             Veazey Scholarship

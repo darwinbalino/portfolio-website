@@ -16,9 +16,11 @@ const Contact = () => {
           I'm an eager learner, always challenging myself to take on bigger and
           better projects.
         </h1>
-        <button className="py-4 font-mono text-sm text-center rounded-sm ring-1 text-turquoise ring-turquoise">
-          Say Hello
-        </button>
+        <div className="pt-10">
+          <button className="self-center px-8 py-4 font-mono text-sm rounded-sm ring-1 text-turquoise ring-turquoise">
+            Say Hello
+          </button>
+        </div>
       </div>
     </main>
   );
