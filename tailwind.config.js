@@ -16,6 +16,7 @@ module.exports = {
           light: "#a8b2d1",
           lightest: "#ccd6f6",
         },
+        white: "#e6f1ff",
       },
     },
     fontSize: {
@@ -23,11 +24,13 @@ module.exports = {
       sm: ".875rem",
       tiny: ".79rem",
       base: "1rem",
+      md: "1.05rem",
       lg: "1.125rem",
       xl: "1.25rem",
+      "1.5xl": "1.45rem",
       "2xl": "1.5rem",
       "3xl": "1.875rem",
-      "4xl": "2.25rem",
+      "4xl": "2.3rem",
       "5xl": "3.5rem",
       "6xl": "4rem",
       "7xl": "4.5rem",
@@ -36,5 +39,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
