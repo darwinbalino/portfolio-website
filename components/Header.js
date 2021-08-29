@@ -1,15 +1,24 @@
+import Image from "next/image";
 import React from "react";
+import { Link } from "react-scroll";
+var hexagon = require("/public/hexagon.png");
 
 const Header = ({ sidebar, setSidebar }) => {
-  // const [sidebar, setSidebar] = useState(false);
-
   return (
     <main>
       <header className="flex items-center justify-between px-8 py-8 font-mono md:px-12">
-        <div className="cursor-pointer">
-          <h1 className="py-0.5 px-1.5 text-md font-semibold text-turquoise ring-2 ring-turquoise">
+        <div className="relative cursor-pointer">
+          <h1 className="absolute px-3.5 py-3.5 font-semibold text-md text-turquoise">
+            {/* py-0.5 px-1.5 */}
             DB
           </h1>
+          <Image
+            className="relative rounded text-turquoise"
+            src={hexagon}
+            width={50}
+            height={50}
+            objectFit="cover"
+          />
         </div>
         <div
           onClick={() => setSidebar(!sidebar)}
@@ -32,24 +41,33 @@ const Header = ({ sidebar, setSidebar }) => {
         <div className="items-center hidden font-medium md:flex space-x-7 text-tiny text-turquoise">
           <h1>
             01.{" "}
-            <span className="cursor-pointer hover:text-turquoise text-slate-lightest">
+            <Link
+              to="about"
+              className="cursor-pointer hover:text-turquoise text-slate-lightest"
+            >
               About
-            </span>
+            </Link>
           </h1>
 
           <h1>
             02.{" "}
-            <span className="cursor-pointer hover:text-turquoise text-slate-lightest">
+            <Link
+              to="projects"
+              className="cursor-pointer hover:text-turquoise text-slate-lightest"
+            >
               Projects
-            </span>
+            </Link>
           </h1>
           <h1>
             03.{" "}
-            <span className="cursor-pointer hover:text-turquoise text-slate-lightest">
+            <Link
+              to="contact"
+              className="cursor-pointer hover:text-turquoise text-slate-lightest"
+            >
               Contact
-            </span>
+            </Link>
           </h1>
-          <button className="px-4 py-2.5 rounded-sm cursor-pointer ring-1 ring-turquoise">
+          <button className="px-4 py-2.5 hover:bg-navy-lightest rounded-sm cursor-pointer ring-1 ring-turquoise">
             Resume
           </button>
         </div>
@@ -83,24 +101,36 @@ const Header = ({ sidebar, setSidebar }) => {
         <div className="flex flex-col space-y-10 font-mono text-center">
           <div>
             <h1 className="text-sm text-turquoise">01.</h1>
-            <h1 className="text-lg cursor-pointer text-slate-lightest hover:text-turquoise">
+            <Link
+              to="about"
+              onClick={() => setSidebar(!sidebar)}
+              className="text-lg cursor-pointer text-slate-lightest hover:text-turquoise"
+            >
               About
-            </h1>
+            </Link>
           </div>
           <div>
             <h1 className="text-sm text-turquoise">02.</h1>
-            <h1 className="text-lg cursor-pointer text-slate-lightest hover:text-turquoise">
+            <Link
+              to="projects"
+              onClick={() => setSidebar(!sidebar)}
+              className="text-lg cursor-pointer text-slate-lightest hover:text-turquoise"
+            >
               Projects
-            </h1>
+            </Link>
           </div>
           <div>
             <h1 className="text-sm text-turquoise">03.</h1>
-            <h1 className="text-lg cursor-pointer text-slate-lightest hover:text-turquoise">
+            <Link
+              to="contact"
+              onClick={() => setSidebar(!sidebar)}
+              className="text-lg cursor-pointer text-slate-lightest hover:text-turquoise"
+            >
               Contact
-            </h1>
+            </Link>
           </div>
           <div className="pt-10">
-            <button className="self-center px-12 cursor-pointer py-3.5 font-mono text-sm rounded-sm ring-1 text-turquoise ring-turquoise">
+            <button className="self-center hover:bg-navy-lightest px-12 cursor-pointer py-3.5 font-mono text-sm rounded-sm ring-1 text-turquoise ring-turquoise">
               Resume
             </button>
           </div>

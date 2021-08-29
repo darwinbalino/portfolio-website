@@ -1,0 +1,15 @@
+.tint {
+  background: rgba(0, 255, 255, 0.5);
+}
+.imageholder {
+  height: 250px;
+  width: 250px;
+  position: relative;
+}
+.imageholder:before {
+  background: rgba(0, 255, 255, 0.5);
+  transition: all 0.3s linear;
+}
+.imageholder:hover:before {
+  background: none;
+}

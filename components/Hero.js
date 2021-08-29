@@ -24,7 +24,7 @@ const Hero = ({ sidebar }) => {
             Express.
           </h1>
         </div>
-        <button className="px-8 py-4 font-mono text-sm rounded-sm mt-14 ring-1 text-turquoise ring-turquoise">
+        <button className="px-8 py-4 font-mono text-sm rounded-sm hover:bg-navy-lightest mt-14 ring-1 text-turquoise ring-turquoise">
           Get in Touch
         </button>
       </main>

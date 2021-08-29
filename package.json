@@ -9,8 +9,11 @@
     "@heroicons/react": "^1.0.4",
     "next": "latest",
     "react": "^17.0.2",
+    "react-custom-scrollbar": "^1.0.0",
     "react-dom": "^17.0.2",
+    "react-scroll": "^1.8.3",
     "react-spring": "^9.2.4",
+    "react-waypoint": "^10.1.0",
     "tailwind-scrollbar-hide": "^1.0.3"
   },
   "devDependencies": {
