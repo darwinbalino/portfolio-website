@@ -7,7 +7,7 @@ const Contact = () => {
   const animation = useSpring({
     opacity: on ? 1 : 0,
     transform: on ? "translate3d(0,0,0)" : "translate3d(0,5%,0)",
-    config: config.molasses,
+    config: config.molasses
   });
   return (
     <main id="contact">

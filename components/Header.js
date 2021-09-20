@@ -1,24 +1,20 @@
-import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 import { Link } from "react-scroll";
-var hexagon = require("/public/hexagon.png");
 
 const Header = ({ sidebar, setSidebar }) => {
+  const router = useRouter();
   return (
     <main>
-      <header className="flex items-center justify-between px-8 py-8 font-mono md:px-12">
-        <div className="relative cursor-pointer">
-          <h1 className="absolute px-3.5 py-3.5 font-semibold text-md text-turquoise">
-            {/* py-0.5 px-1.5 */}
+      <header className="flex items-center justify-between px-8 py-8 font-mono bg-opacity-90 bg-navy md:px-12">
+        <div
+          onClick={() => router.reload(window.location)}
+          className="relative ml-1 cursor-pointer group"
+        >
+          <h1 className="absolute px-1 py-0.5 text-md z-10 text-turquoise">
             DB
           </h1>
-          <Image
-            className="relative rounded text-turquoise"
-            src={hexagon}
-            width={50}
-            height={50}
-            objectFit="cover"
-          />
+          <div className="relative rotate-45 bg-transparent w-7 h-7 group-hover:bg-navy-lightest ring-2 ring-turquoise"></div>
         </div>
         <div
           onClick={() => setSidebar(!sidebar)}
@@ -30,6 +26,7 @@ const Header = ({ sidebar, setSidebar }) => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
+            strokeWidth="1.3"
           >
             <path
               stroke-linecap="round"
@@ -77,15 +74,15 @@ const Header = ({ sidebar, setSidebar }) => {
         className={
           sidebar
             ? "bg-navy-light shadow-2xl space-y-6 w-[355px] absolute inset-y-0 right-0 transform translate-x-full transition duration-200 ease-in-out"
-            : "bg-navy-light z-10 shadow-2xl space-y-6 w-[355px] absolute inset-y-0 right-0 transform transition duration-200 ease-in-out"
+            : "bg-navy-light shadow-2xl z-10 space-y-6 w-[355px] absolute inset-y-0 right-0 transform transition duration-200 ease-in-out"
         }
       >
-        <div className="flex justify-between py-8 mb-36 px-7">
+        <div className="flex justify-between px-7 py-7 mb-36">
           <div></div>
           <svg
             onClick={() => setSidebar(!sidebar)}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-11 text-turquoise"
+            className="cursor-pointer h-11 text-turquoise"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

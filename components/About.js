@@ -41,19 +41,22 @@ const About = () => {
           <h1>
             Since then, I've had the privilage of studying General Science at
             The University of British Columbia as a recipient of a{" "}
-            <span className="cursor-pointer text-turquoise hover:underline">
+            <a
+              href="https://veazeyscholars.com/"
+              className="cursor-pointer text-turquoise hover:underline"
+            >
               Veazey Scholarship
-            </span>{" "}
+            </a>{" "}
             in 2014. Fast-forward to today, and I've rekindled my interest in
             web development &{" "}
             <span className="text-turquoise">passion for technology </span>
-            while learning to program in JavaScript.
+            while learning to program in JavaScript and Solidity.
           </h1>
           <h1>Here are a few technologies I've been working with recently:</h1>
         </section>
 
         <div className="max-w-sm">
-          <div className="grid grid-cols-2 mt-5 space-y-2 font-mono text-tiny ">
+          <div className="grid grid-cols-2 mt-5 space-y-2 font-mono text-tiny">
             <div className="flex items-center space-x-3">
               <ChevronDoubleRightIcon className="h-2.5 text-turquoise" />
               <h1>JavaScript (ES6+)</h1>
@@ -76,7 +79,7 @@ const About = () => {
             </div>
             <div className="flex items-center space-x-3">
               <ChevronDoubleRightIcon className="h-2.5 text-turquoise" />
-              <h1>Firebase</h1>
+              <h1>Solidity</h1>
             </div>
           </div>
         </div>
@@ -86,7 +89,7 @@ const About = () => {
             <div className="absolute w-full h-full rounded group-hover:-right-3 group-hover:top-2 ring-2 ring-turquoise -right-4 top-3"></div>
 
             <Image
-              className="relative rounded tint"
+              className="relative rounded grayscale-60 hover:grayscale-10 filter"
               src={portrait}
               width={250}
               height={250}

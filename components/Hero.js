@@ -1,32 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
+import { animated, config, useSpring } from "react-spring";
+import { Waypoint } from "react-waypoint";
 
 const Hero = ({ sidebar }) => {
+  const [on, toggle] = useState(false);
+  const animation = useSpring({
+    opacity: on ? 1 : 0,
+    transform: on ? "translate3d(0,0,0)" : "translate3d(0,100%,0)",
+    config: config.slow,
+  });
+  const animation2 = useSpring({
+    opacity: on ? 1 : 0,
+    transform: on ? "translate3d(0,0,0)" : "translate3d(0,50%,0)",
+    config: config.slow,
+  });
+  const animation3 = useSpring({
+    opacity: on ? 1 : 0,
+    transform: on ? "translate3d(0,0,0)" : "translate3d(0,100%,0)",
+    config: config.molasses,
+  });
+
   return (
     <div className={sidebar ? " filter blur-none" : "filter blur-md"}>
+      <Waypoint
+        onEnter={() => {
+          if (!on) toggle(true);
+        }}
+      />
       <main className="pt-16 md:pt-4 text-slate">
-        <h1 className="mb-6 font-mono text-md text-turquoise">
+        <animated.h1
+          style={animation}
+          className="mb-6 font-mono text-md text-turquoise"
+        >
           Hi, my name is
-        </h1>
+        </animated.h1>
         <div className="flex flex-col flex-grow">
-          <h1 className="text-4xl font-bold md:text-5xl lg:text-7xl text-slate-lightest">
+          <animated.h1
+            style={animation2}
+            className="text-4xl font-bold md:text-5xl lg:text-7xl text-slate-lightest"
+          >
             Darwin Balino.
-          </h1>
-          <h1 className="text-4xl font-bold leading-10 md:leading-none lg:text-7xl XXlg:-mt-4 md:text-5xl">
+          </animated.h1>
+          <animated.h1
+            style={animation}
+            className="text-4xl font-bold leading-10 md:leading-none lg:text-7xl XXlg:-mt-4 md:text-5xl"
+          >
             I build things for the web.
-          </h1>
+          </animated.h1>
         </div>
         <div className="max-w-lg">
-          <h1 className="mt-6 font-sans text-md ">
-            I'm an aspiring software developer. I've been learning to program in
+          <animated.h1 style={animation} className="mt-6 font-sans text-md ">
+            I'm an aspiring software eningeer. I've been learning to program in
             Javascript for the past 12 months. Currently, I'm focused on
             building projects with React using{" "}
             <span className="text-turquoise">Next.js & Node.js</span> with
             Express.
-          </h1>
+            As well as dApp development in Solidity using{" "}
+            <span className="text-turquoise">Hardhat & Ethers.js.</span>
+
+          </animated.h1>
         </div>
-        <button className="px-8 py-4 font-mono text-sm rounded-sm hover:bg-navy-lightest mt-14 ring-1 text-turquoise ring-turquoise">
+        <animated.button
+          style={animation3}
+          className="px-8 py-4 font-mono text-sm rounded-sm hover:bg-navy-lightest mt-14 ring-1 text-turquoise ring-turquoise"
+        >
           Get in Touch
-        </button>
+        </animated.button>
       </main>
     </div>
   );
