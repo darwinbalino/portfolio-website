@@ -27,7 +27,7 @@ const Contact = () => {
             Get in Touch
           </h1>
           <h1 className="font-sans text-slate text-md">
-            Although I've yet to have any real world experience in the industry,
+            Although I've yet to have any professional experience in the industry,
             I'm an eager learner, always challenging myself to take on bigger
             and better projects.
           </h1>

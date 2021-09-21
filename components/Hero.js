@@ -27,7 +27,7 @@ const Hero = ({ sidebar }) => {
           if (!on) toggle(true);
         }}
       />
-      <main className="pt-16 md:pt-4 text-slate">
+      <main className="pt-16 md:pt-4 text-slate xl:ml-28">
         <animated.h1
           style={animation}
           className="mb-6 font-mono text-md text-turquoise"

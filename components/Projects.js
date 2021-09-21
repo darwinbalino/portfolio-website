@@ -1,6 +1,11 @@
+import { CodeIcon, ExternalLinkIcon } from '@heroicons/react/outline';
+import Image from 'next/image';
 import React, { useState } from "react";
 import { animated, config, useSpring } from "react-spring";
 import { Waypoint } from "react-waypoint";
+var nft = require("/public/nft.png");
+var ecommerce = require("/public/ecommerce.png");
+var social = require("/public/social.png");
 
 const Projects = () => {
   const [on, toggle] = useState(false);
@@ -10,28 +15,31 @@ const Projects = () => {
     config: config.molasses,
   });
   return (
-    <div id="projects">
+    <div id="projects" className="xl:ml-28">
       <Waypoint
         bottomOffset="30%"
         onEnter={() => {
           if (!on) toggle(true);
         }}
       />
-      <animated.div style={animation}>
-        <header>
+        <animated.header style={animation}>
           <h1 className="font-mono text-turquoise">
             02.{"  "}
             <span className="font-sans text-1.5xl font-bold text-slate-lightest">
               Some things I've Built
             </span>
           </h1>
-        </header>
-        <main className="space-y-14">
-          <section className="p-6 mt-10">
+        </animated.header>
+        <main className="space-y-20">
+
+          <animated.section style={animation} className="max-w-screen-md p-6 mt-10 rounded-lg bg-navy-light md:flex">
+            <div className="md:w-1/2">
+              <div className="cursor-pointer group">
             <h1 className="font-mono text-sm text-turquoise">
               Featured Project
             </h1>
-            <h1 className="text-xl font-bold text-white">NFT Marketplace dApp</h1>
+            <h1 className="text-xl font-bold text-white group-hover:text-turquoise">NFT Marketplace dApp</h1>
+              </div>
             <h1 className="font-sans mt-7 text-slate-light">
             Buy and Sell NFT art! Fully responsive design.
             Interacts with Solidity smart contract.
@@ -40,70 +48,102 @@ const Projects = () => {
               Next.js Tailwind Hardhat Ethers.js{" "}
             </h1>
             <div className="flex mt-3 -ml-2">
+              <a className="p-2 cursor-pointer group"
+              href="https://github.com/darwinbalino/nft-marketplace"
+              >
+                <CodeIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
+              </a>
               <div className="p-2 cursor-pointer group">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 text-slate-lightest group-hover:text-turquoise"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                  />
-                </svg>
-              </div>
-              <div className="p-2 cursor-pointer group">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 text-slate-lightest group-hover:text-turquoise"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
+                <ExternalLinkIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
               </div>
             </div>
-          </section>
+            </div>
+            <div className="hidden cursor-pointer md:inline-block md:w-1/2">
+            <Image
+              className="relative rounded grayscale-100 hover:brightness-105 hover:grayscale-0 filter"
+              src={nft}
+              width={380}
+              height={300}
+              objectFit="cover"
+            />
+            </div>
+          </animated.section>
 
-          <section className="p-6 mt-10">
+          <animated.section style={animation} className="max-w-screen-md p-6 mt-10 rounded-lg md:text-right md:space-x-2 bg-navy-light md:flex">
+            <div className="hidden cursor-pointer md:inline-block md:w-1/2">
+            <Image
+              className="relative rounded grayscale-100 hover:grayscale-50 filter"
+              src={social}
+              width={380}
+              height={320}
+              objectFit="cover"
+            />
+            </div>
+            <div className="md:w-1/2">
+            <div className="cursor-pointer group">
             <h1 className="font-mono text-sm text-turquoise">
               Featured Project
             </h1>
-            <h1 className="text-xl font-bold text-white">Social Media App</h1>
+            <h1 className="text-xl font-bold text-white group-hover:text-turquoise">Social Media App</h1>
+              </div>
             <h1 className="font-sans mt-7 text-slate-light">
-              Interact with fellow vegans. Implements CRUD operations for posts.
-               Fully responsive design
+            Interact with fellow vegans. Implements CRUD operations for posts.
+               Fully responsive design.
             </h1>
-            <h1 className="mt-6 font-mono text-tiny text-slate-light">
-              React Redux Node.js Express Tailwind{" "}
+            <h1 className="mt-6 font-mono text-sm tracking-tighter text-slate-light">
+            React Redux Node.js Express Tailwind{" "}
             </h1>
-          </section>
+            <div className="flex mt-3 -ml-2 md:justify-end">
+              <a className="p-2 cursor-pointer group"
+              href="https://github.com/darwinbalino/social-media-website"
+              >
+                <CodeIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
+              </a>
+              <div className="p-2 cursor-pointer group">
+                <ExternalLinkIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
+              </div>
+            </div>
+            </div>
+          </animated.section>
 
-          <section className="p-6 mt-10">
+          <animated.section style={animation} className="max-w-screen-md p-6 mt-10 rounded-lg bg-navy-light md:flex">
+            <div className="md:w-1/2">
+            <div className="cursor-pointer group">
             <h1 className="font-mono text-sm text-turquoise">
               Featured Project
             </h1>
-            <h1 className="text-xl font-bold text-white">E-Commerce App</h1>
+            <h1 className="text-xl font-bold text-white group-hover:text-turquoise">E-Commerce App</h1>
+              </div>
             <h1 className="font-sans mt-7 text-slate-light">
-            Product data rendered server side from FakeStoreAPI. Implements
+            Buy your every day essentials. Product data rendered server side
+             from FakeStoreAPI. Implements
              CRUD for basket items. Login functionality using NextAuth.
             </h1>
-            <h1 className="mt-6 font-mono text-tiny text-slate-light">
-              Next.js Redux Firebase Stripe API{" "}
+            <h1 className="mt-6 font-mono text-sm tracking-tighter text-slate-light">
+            Next.js Redux Firebase Stripe API{" "}
             </h1>
-          </section>
+            <div className="flex mt-3 -ml-2">
+              <a className="p-2 cursor-pointer group"
+              href="https://github.com/darwinbalino/amazon-clone"
+              >
+                <CodeIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
+              </a>
+              <div className="p-2 cursor-pointer group">
+                <ExternalLinkIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
+              </div>
+            </div>
+            </div>
+            <div className="hidden cursor-pointer md:inline-block md:w-1/2">
+            <Image
+              className="relative rounded grayscale-100 hover:grayscale-60 filter"
+              src={ecommerce}
+              width={380}
+              height={320}
+              objectFit="cover"
+            />
+            </div>
+          </animated.section>
         </main>
-      </animated.div>
     </div>
   );
 };

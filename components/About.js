@@ -13,7 +13,7 @@ const About = () => {
     config: config.molasses,
   });
   return (
-    <main className="font-sans text-slate" id="about">
+    <main className="font-sans text-slate xl:ml-28" id="about">
       <Waypoint
         bottomOffset="30%"
         onEnter={() => {
@@ -30,7 +30,7 @@ const About = () => {
           </h1>
         </header>
 
-        <section className="space-y-5 font-sans text-md mt-9">
+        <section className="max-w-screen-md space-y-5 font-sans text-md mt-9">
           <h1>
             Hello! My name is Darwin and I enjoy creating things that live on
             the internet. My interest in web development started back in 2013
@@ -53,7 +53,6 @@ const About = () => {
             while learning to program in JavaScript and Solidity.
           </h1>
           <h1>Here are a few technologies I've been working with recently:</h1>
-        </section>
 
         <div className="max-w-sm">
           <div className="grid grid-cols-2 mt-5 space-y-2 font-mono text-tiny">
@@ -83,6 +82,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        </section>
 
         <div className="flex items-center mt-14">
           <div className="relative group">
