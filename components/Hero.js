@@ -63,7 +63,7 @@ const Hero = ({ sidebar }) => {
         <animated.a
           href="mailto:darwinbalino@gmail.com"
           style={animation3}
-          className="px-8 py-4 ml-1 font-mono text-sm rounded-sm hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise"
+          className="px-8 py-4 mb-1 ml-1 font-mono text-sm rounded-sm md:mb-0 hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise"
         >
           Get in Touch
         </animated.a>
