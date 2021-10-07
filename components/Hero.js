@@ -49,23 +49,24 @@ const Hero = ({ sidebar }) => {
           </animated.h1>
         </div>
         <div className="max-w-lg">
-          <animated.h1 style={animation} className="mt-6 font-sans text-md ">
+          <animated.h1 style={animation} className="mt-6 font-sans text-md mb-14">
             I'm an aspiring software eningeer. I've been learning to program in
             Javascript for the past 12 months. Currently, I'm focused on
             building projects with React using{" "}
             <span className="text-turquoise">Next.js & Node.js</span> with
             Express.
-            As well as dApp development in Solidity using{" "}
+            As well as dApp development with Solidity using{" "}
             <span className="text-turquoise">Hardhat & Ethers.js.</span>
 
           </animated.h1>
         </div>
-        <animated.button
+        <animated.a
+          href="mailto:darwinbalino@gmail.com"
           style={animation3}
-          className="px-8 py-4 ml-1 font-mono text-sm rounded-sm lg:ml-0 hover:bg-navy-lightest mt-14 ring-1 text-turquoise ring-turquoise"
+          className="px-8 py-4 ml-1 font-mono text-sm rounded-sm xl:ml-0 hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise"
         >
           Get in Touch
-        </animated.button>
+        </animated.a>
       </main>
     </div>
   );
