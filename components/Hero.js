@@ -49,7 +49,7 @@ const Hero = ({ sidebar }) => {
           </animated.h1>
         </div>
         <div className="max-w-lg">
-          <animated.h1 style={animation} className="mt-6 font-sans text-md mb-14">
+          <animated.h1 style={animation} className="mt-6 mb-12 font-sans text-md">
             I'm an aspiring software eningeer. I've been learning to program in
             Javascript for the past 12 months. Currently, I'm focused on
             building projects with React using{" "}
@@ -63,7 +63,7 @@ const Hero = ({ sidebar }) => {
         <animated.a
           href="mailto:darwinbalino@gmail.com"
           style={animation3}
-          className="px-8 py-4 mb-1 ml-1 font-mono text-sm rounded-sm md:mb-0 hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise"
+          className="px-8 py-4 ml-1 font-mono text-sm rounded-sm hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise"
         >
           Get in Touch
         </animated.a>
