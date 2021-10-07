@@ -64,9 +64,11 @@ const Header = ({ sidebar, setSidebar }) => {
               Contact
             </Link>
           </h1>
-          <button className="px-4 py-2.5 hover:bg-navy-lightest rounded-sm cursor-pointer ring-1 ring-turquoise">
+          <a
+          href="resume.pdf"
+          className="px-4 py-2.5 hover:bg-navy-lightest rounded-sm cursor-pointer ring-1 ring-turquoise">
             Resume
-          </button>
+          </a>
         </div>
       </header>
       {/* Sidebar */}
@@ -127,9 +129,11 @@ const Header = ({ sidebar, setSidebar }) => {
             </Link>
           </div>
           <div className="pt-10">
-            <button className="self-center hover:bg-navy-lightest px-12 cursor-pointer py-3.5 font-mono text-sm rounded-sm ring-1 text-turquoise ring-turquoise">
+            <a
+            href="resume.pdf"
+            className="self-center hover:bg-navy-lightest px-12 cursor-pointer py-3.5 font-mono text-sm rounded-sm ring-1 text-turquoise ring-turquoise">
               Resume
-            </button>
+            </a>
           </div>
         </div>
       </div>
