@@ -62,7 +62,7 @@ const Hero = ({ sidebar }) => {
         </div>
         <animated.button
           style={animation3}
-          className="px-8 py-4 font-mono text-sm rounded-sm hover:bg-navy-lightest mt-14 ring-1 text-turquoise ring-turquoise"
+          className="px-8 py-4 ml-1 font-mono text-sm rounded-sm lg:ml-0 hover:bg-navy-lightest mt-14 ring-1 text-turquoise ring-turquoise"
         >
           Get in Touch
         </animated.button>

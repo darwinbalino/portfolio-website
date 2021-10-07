@@ -34,12 +34,14 @@ const Projects = () => {
 
           <animated.section style={animation} className="max-w-screen-md p-6 mt-10 rounded-lg bg-navy-light md:flex">
             <div className="md:w-1/2">
-              <div className="cursor-pointer group">
+              <a
+              href="https://known-origin.vercel.app/"
+              className="cursor-pointer group">
             <h1 className="font-mono text-sm text-turquoise">
               Featured Project
             </h1>
             <h1 className="text-xl font-bold text-white group-hover:text-turquoise">NFT Marketplace dApp</h1>
-              </div>
+              </a>
             <h1 className="font-sans mt-7 text-slate-light">
             Buy and Sell NFT art! Fully responsive design.
             Interacts with Solidity smart contract.
@@ -53,39 +55,47 @@ const Projects = () => {
               >
                 <CodeIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
               </a>
-              <div className="p-2 cursor-pointer group">
+              <a className="p-2 cursor-pointer group"
+              href="https://known-origin.vercel.app/"
+              >
                 <ExternalLinkIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
-              </div>
+              </a>
             </div>
             </div>
             <div className="hidden cursor-pointer md:inline-block md:w-1/2">
+              <a href="https://known-origin.vercel.app/">
             <Image
               className="relative rounded grayscale-100 hover:brightness-105 hover:grayscale-0 filter"
               src={nft}
               width={380}
               height={300}
               objectFit="cover"
-            />
+              />
+              </a>
             </div>
           </animated.section>
 
           <animated.section style={animation} className="max-w-screen-md p-6 mt-10 rounded-lg md:text-right md:space-x-2 bg-navy-light md:flex">
             <div className="hidden cursor-pointer md:inline-block md:w-1/2">
+              <a href="https://veganzone.netlify.app/">
             <Image
               className="relative rounded grayscale-100 hover:grayscale-50 filter"
               src={social}
               width={380}
               height={320}
               objectFit="cover"
-            />
+              />
+              </a>
             </div>
             <div className="md:w-1/2">
-            <div className="cursor-pointer group">
+            <a
+            href="https://veganzone.netlify.app/"
+            className="cursor-pointer group">
             <h1 className="font-mono text-sm text-turquoise">
               Featured Project
             </h1>
             <h1 className="text-xl font-bold text-white group-hover:text-turquoise">Social Media App</h1>
-              </div>
+              </a>
             <h1 className="font-sans mt-7 text-slate-light">
             Interact with fellow vegans. Implements CRUD operations for posts.
                Fully responsive design.
@@ -99,21 +109,25 @@ const Projects = () => {
               >
                 <CodeIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
               </a>
-              <div className="p-2 cursor-pointer group">
+              <a
+              href="https://veganzone.netlify.app/"
+              className="p-2 cursor-pointer group">
                 <ExternalLinkIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
-              </div>
+              </a>
             </div>
             </div>
           </animated.section>
 
           <animated.section style={animation} className="max-w-screen-md p-6 mt-10 rounded-lg bg-navy-light md:flex">
             <div className="md:w-1/2">
-            <div className="cursor-pointer group">
+            <a
+              href="https://amazon-e-commerce.vercel.app/"
+             className="cursor-pointer group">
             <h1 className="font-mono text-sm text-turquoise">
               Featured Project
             </h1>
             <h1 className="text-xl font-bold text-white group-hover:text-turquoise">E-Commerce App</h1>
-              </div>
+              </a>
             <h1 className="font-sans mt-7 text-slate-light">
             Buy your every day essentials. Product data rendered server side
              from FakeStoreAPI. Implements
@@ -128,19 +142,23 @@ const Projects = () => {
               >
                 <CodeIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
               </a>
-              <div className="p-2 cursor-pointer group">
+              <a
+                href="https://amazon-e-commerce.vercel.app/"
+               className="p-2 cursor-pointer group">
                 <ExternalLinkIcon className="h-5 text-slate-lightest group-hover:text-turquoise" />
-              </div>
+              </a>
             </div>
             </div>
             <div className="hidden cursor-pointer md:inline-block md:w-1/2">
+              <a href="https://amazon-e-commerce.vercel.app/">
             <Image
               className="relative rounded grayscale-100 hover:grayscale-60 filter"
               src={ecommerce}
               width={380}
               height={320}
               objectFit="cover"
-            />
+              />
+              </a>
             </div>
           </animated.section>
         </main>
