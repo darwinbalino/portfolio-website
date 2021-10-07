@@ -2,21 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-image {
+image-holder {
+  height: 250px;
+  width: 250px;
   position: relative;
 }
-
-.hero-image:after {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(100, 255, 218, 0.1);
-  top: 0;
-  left: 0;
-  display: block;
-  content: "";
+image-holder:before {
+  background: rgba(0, 255, 255, 0.5);
+  transition: all 0.3s linear;
+}
+image-holder:hover:before {
+  background: none;
 }
 
-.tint {
-  background: rgba(100, 255, 218, 0.1);
+tint {
+  background: rgba(0, 255, 255, 0.5);
 }

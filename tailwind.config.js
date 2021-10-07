@@ -35,9 +35,17 @@ module.exports = {
       "6xl": "4rem",
       "7xl": "4.5rem",
     },
+    grayscale: {
+      0:"0%",
+      10: "10%",
+      50: "50%",
+      60: "60%",
+      80: "80%",
+      100: "100%"
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [],
 };

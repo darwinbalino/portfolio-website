@@ -8,14 +8,14 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 
 export default function Home() {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
   return (
     <div className="relative min-h-screen overflow-hidden bg-navy">
       <Head>
         <title>Darwin Balino</title>
       </Head>
       <Header sidebar={sidebar} setSidebar={setSidebar} />
-      <div className="p-14 space-y-72 md:p-24">
+      <div className="space-y-56 p-14 md:p-24">
         <Hero sidebar={sidebar} />
         <About />
         <Projects />
