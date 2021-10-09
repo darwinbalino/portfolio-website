@@ -32,9 +32,11 @@ const Contact = () => {
             and better projects.
           </h1>
           <div className="pt-10">
-            <button className="self-center px-8 py-4 font-mono text-sm rounded-sm hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise">
+            <a
+            href="mailto:darwinbalino@gmail.com"
+            className="self-center px-8 py-4 font-mono text-sm rounded-sm hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise">
               Say Hello
-            </button>
+            </a>
           </div>
         </div>
       </animated.div>
