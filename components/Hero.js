@@ -55,8 +55,11 @@ const Hero = ({ sidebar }) => {
             building projects with React using{" "}
             <span className="text-turquoise">Next.js & Node.js</span> with
             Express.
-            As well as dApp development with Solidity using{" "}
-            <span className="text-turquoise">Hardhat & Ethers.js.</span>
+            As well as dApp development while attending {" "}
+            <a
+            href="https://consensys.net/academy/bootcamp/"
+            className="text-turquoise hover:underline">Consensys Academy </a>
+             Blockchain Developer Bootcamp.
 
           </animated.h1>
         </div>
