@@ -27,50 +27,56 @@ const Hero = ({ sidebar }) => {
           if (!on) toggle(true);
         }}
       />
-      <main className="pt-16 md:pt-4 text-slate xl:ml-28">
-        <animated.h1
-          style={animation}
-          className="mb-6 font-mono text-md text-turquoise"
-        >
-          Hi, my name is
-        </animated.h1>
-        <div className="flex flex-col flex-grow">
-          <animated.h1
-            style={animation2}
-            className="text-4xl font-bold md:text-5xl lg:text-7xl text-slate-lightest"
-          >
-            Darwin Balino.
-          </animated.h1>
+      <div className="flex justify-center">
+        <main className="max-w-screen-md pt-16 md:pt-4 text-slate">
           <animated.h1
             style={animation}
-            className="text-4xl font-bold leading-10 md:leading-none lg:text-7xl XXlg:-mt-4 md:text-5xl"
+            className="mb-6 font-mono text-md text-turquoise"
           >
-            I build things for the web.
+            Hi, my name is
           </animated.h1>
-        </div>
-        <div className="max-w-lg">
-          <animated.h1 style={animation} className="mt-6 mb-12 font-sans text-md">
-            I'm an aspiring software eningeer. I've been learning to program in
-            Javascript for the past 12 months. Currently, I'm focused on
-            building projects with React using{" "}
-            <span className="text-turquoise">Next.js & Node.js</span> with
-            Express.
-            As well as dApp development while attending {" "}
-            <a
-            href="https://consensys.net/academy/bootcamp/"
-            className="text-turquoise hover:underline">Consensys Academy </a>
-             Blockchain Developer Bootcamp.
-
-          </animated.h1>
-        </div>
-        <animated.a
-          href="mailto:darwinbalino@gmail.com"
-          style={animation3}
-          className="px-8 py-4 ml-1 font-mono text-sm rounded-sm hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise"
-        >
-          Get in Touch
-        </animated.a>
-      </main>
+          <div className="flex flex-col flex-grow">
+            <animated.h1
+              style={animation2}
+              className="text-4xl font-bold md:text-5xl lg:text-7xl text-slate-lightest"
+            >
+              Darwin Balino.
+            </animated.h1>
+            <animated.h1
+              style={animation}
+              className="text-4xl font-bold leading-10 md:leading-none lg:text-7xl md:text-5xl"
+            >
+              I build things for the web.
+            </animated.h1>
+          </div>
+          <div className="max-w-lg">
+            <animated.h1
+              style={animation}
+              className="mt-5 mb-12 font-sans md:mt-7 text-md"
+            >
+              I'm an aspiring software eningeer. I've been learning to program
+              in Javascript for the past 12 months. Currently, I'm focused on
+              building projects with React using{" "}
+              <span className="text-turquoise">Next.js & Node.js</span> with
+              Express. As well as dApp development while attending{" "}
+              <a
+                href="https://consensys.net/academy/bootcamp/"
+                className="text-turquoise hover:underline"
+              >
+                Consensys Academy{" "}
+              </a>
+              Blockchain Developer Bootcamp.
+            </animated.h1>
+          </div>
+          <animated.a
+            href="mailto:darwinbalino@gmail.com"
+            style={animation3}
+            className="px-8 py-4 ml-1 font-mono text-sm rounded-sm hover:bg-navy-lightest ring-1 text-turquoise ring-turquoise"
+          >
+            Get in Touch
+          </animated.a>
+        </main>
+      </div>
     </div>
   );
 };
