@@ -15,7 +15,7 @@ export default function Home() {
         <title>Darwin Balino</title>
       </Head>
       <Header sidebar={sidebar} setSidebar={setSidebar} />
-      <div className="space-y-56 p-14 md:p-24">
+      <div className="space-y-56 px-7 sm:p-14 md:p-24 ">
         <Hero sidebar={sidebar} />
         <About />
         <Projects />
